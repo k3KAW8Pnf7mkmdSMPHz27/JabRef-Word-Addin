@@ -36,10 +36,10 @@
       ]
     },
     "import/resolver": {
-      "paths": [
-        "src"
-      ],
       "node": {
+        "paths": [
+          "src"
+        ],
         "extensions": [
           ".js",
           ".jsx",
