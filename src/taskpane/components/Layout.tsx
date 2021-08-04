@@ -15,6 +15,7 @@ import {
 import React, { ReactElement } from "react";
 import { useLogoutMutation } from "../../generated/graphql";
 import client from "../../utils/apolloClient";
+import CitationStyle from "../pages/citationStyle";
 import Dashboard from "../pages/dashboard";
 import Wrapper from "./Wrapper";
 
@@ -73,14 +74,21 @@ function Layout(): ReactElement {
           </PivotItem>
           <PivotItem headerText="Citation Style">
             <Stack styles={wrapperStack}>
-              <div>Under Construction</div>
+              <CitationStyle />
             </Stack>
           </PivotItem>
         </Pivot>
       </Stack>
       <Stack grow disableShrink styles={footerStackStyle} verticalAlign="end">
-        <Stack horizontal style={{ height: "100%" }} horizontalAlign="space-between">
-          <Stack horizontal style={{ alignItems: "center", padding: 8, paddingLeft: 10 }}>
+        <Stack
+          horizontal
+          style={{ height: "100%" }}
+          horizontalAlign="space-between"
+        >
+          <Stack
+            horizontal
+            style={{ alignItems: "center", padding: 8, paddingLeft: 10 }}
+          >
             <img {...imageProps} alt="jabref logo" width={20} />
             <div
               style={{
